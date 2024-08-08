@@ -28,7 +28,16 @@ function first(){
         },3700);
     });
 };
-
+function linkToThisRepository(){
+    return new Promise((resolve)=>{
+        console.log('link ^_^');
+        let oK = `<a href='https://github.com/amir248/asyncAwait'>link to this repository</a>`;
+        setTimeout(()=>{
+            resolve(console.log(oK));
+            toGoOnWriteAtThePage(`${oK}`);
+         },7777);
+    });
+};
 
 async function asyncAwait(){
     
@@ -59,6 +68,7 @@ async function asyncAwait(){
     await second();
 
     await threeth();
+    await linkToThisRepository();
 };
 
 asyncAwait();
