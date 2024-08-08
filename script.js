@@ -17,7 +17,8 @@ function threeth(){
             toGoOnWriteAtThePage(oK);
         },700);
     });
-}
+};
+
 function first(){
     return new Promise((resolve) => {
         console.log('First o_O');
@@ -28,6 +29,7 @@ function first(){
         },3700);
     });
 };
+
 function linkToThisRepository(){
     return new Promise((resolve)=>{
         console.log('link ^_^');
@@ -50,10 +52,13 @@ async function asyncAwait(){
 
     // let first = new Promise((resolve, reject)=>{
     //     console.log('First o_O');
+    //     let oK='O_o resolve First function';
     //     setTimeout(()=>{
-    //         console.log('first script it\'s working');
-    //     },700);
+    //        resolve(console.log(oK));
+    //        toGoOnWriteAtThePage(oK);
+    //     },3700);
     // });
+   
     
     // let second = new Promise((resolve, reject)=>{
     //     console.log('TWO O_o');
@@ -72,7 +77,6 @@ async function asyncAwait(){
 };
 
 asyncAwait();
-
 
 function toGoOnWriteAtThePage(text){
     let boxText = document.createElement('p');
