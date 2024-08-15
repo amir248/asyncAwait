@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: aliceblue;
+    width:1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    width:100%;
+    max-width:1300px;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(255,255,0,0.3),rgba(0,255,255,0.3));
+}
